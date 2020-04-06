@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.marcel.proyect_ia.QuizActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/question"
+        android:id="@+id/textView2"
+        android:textSize="20dp"
+        android:textColor="@android:color/holo_blue_dark"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/animation"
+        android:layout_above="@+id/text_question1"
+        android:layout_below="@+id/textView2" />
+
+    <View
+        android:id="@+id/rule"
+        android:background="@android:color/holo_blue_light"
+        android:layout_height="2dp"
+        android:layout_width="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+
+    </View>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/answer_group"
+        android:layout_below="@+id/rule"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/textView3" />
+
+        <CheckBox
+            android:layout_width="94dp"
+            android:layout_height="wrap_content"
+            android:text="New CheckBox"
+            android:id="@+id/answer1"
+            android:layout_margin="5dp"/>
+
+        <CheckBox
+            android:layout_width="97dp"
+            android:layout_height="wrap_content"
+            android:text="New CheckBox"
+            android:id="@+id/answer2"
+            android:layout_margin="5dp"/>
+        <CheckBox
+            android:layout_width="97dp"
+            android:layout_height="wrap_content"
+            android:text="New CheckBox"
+            android:id="@+id/answer3"
+            android:layout_margin="5dp" />
+
+
+    </LinearLayout>
+
+       <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:id="@+id/next1"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:textSize="18sp"
+        android:textColor="@color/abc_primary_text_disable_only_material_light"
+        android:id="@+id/text_question1"
+        android:layout_above="@+id/rule"
+        android:layout_alignLeft="@+id/answer_group"
+        android:layout_alignStart="@+id/answer_group"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

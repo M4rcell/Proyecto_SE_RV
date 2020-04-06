@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Proyect_IA</string>
+    <string name="question">Preguntas</string>
+    <string name="next">Next</string>
+
+    <array name="answers">
+        <item> Cafe </item>
+        <item> Azul </item>
+        <item> Naranjado </item>
+    </array>
+
+    <integer name="correct_answer"> 2</integer>
+</resources>
